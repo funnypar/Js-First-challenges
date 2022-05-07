@@ -1,0 +1,5 @@
+ Let's improve Steven's tip calculator even more, this time using loops!
+ 
+ The idea of this challenge come from Jonas Schmedtmann courses in Udemy *****
+ 
+ But i did it by myself ;)
