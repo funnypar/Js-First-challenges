@@ -1,0 +1,6 @@
+Given an array of forecasted maximum temperatures, the thermometer displays a string with the given temperatures. Example: [17, 21, 23]
+will print "... 17ºC in 1 days ... 21ºC in 2 days ... 23ºC in 3 days ..."
+
+The idea of this challenge come from Jonas Schmedtmann in Udemy Js courses *****
+
+But i did it by myself ;)
