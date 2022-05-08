@@ -1,0 +1,6 @@
+We are building a football betting app (soccer)! soppuse we get data from a web service about a certain game. In this challenge we're gonna
+work with the data.
+
+The idea of this challenge come from Jonas Schmedtmann in Udemy *****
+
+But i did it by myself ;)
