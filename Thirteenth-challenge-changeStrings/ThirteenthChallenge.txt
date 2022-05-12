@@ -1,0 +1,6 @@
+Write a program that receives a list of variable names written in underscore_case and convert them to camelCase.
+The input will come from a textarea inserted into the DOM , and conversion will happen when the button is pressed.
+
+The idea of this challenge come from Jonas Schmmdetmann in Udemy *****
+
+But i did it by myself ;)
