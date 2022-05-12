@@ -1,0 +1,6 @@
+Let's continue with our football betting app!This time, we have a map with the log of the events that happend during the game.
+The values are the events themeselves, and the keys are the minutes in which each event happend (a football game has 90 minutes plus some extra time.)
+
+The idea of this challenge come from Jonas Schmedtmann in Udemy *****
+
+But i did it by myself ;)
