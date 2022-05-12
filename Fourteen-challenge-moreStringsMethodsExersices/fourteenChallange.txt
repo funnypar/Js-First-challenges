@@ -1,0 +1,5 @@
+In this challenge you can see more exercises about strings methods ;)
+
+The idea of this challange come from Jonas Schmedtmann in Udemy Js courses *****
+
+But i did it by myself ;)
