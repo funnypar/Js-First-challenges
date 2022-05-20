@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fifteenth challenge</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div
+      class="container my-5 mx-auto"
+      style="background-color: rgba(137, 43, 226, 0.52); border-radius: 30px"
+    >
+      <div class="p-3">
+        Let's build a simple poll app!
+        <br />
+        <br />
+        A poll has a question, an array of options from which people can choose,
+        and an array with the number of replies for each option. This data is
+        stored in the starter object below.
+        <br />
+        <br />
+        Here are your tasks :
+        <br />
+        <br />
+        1.Create a method called 'registerNewAnswer' on the 'poll' object. The
+        method does 2 things : 1.1. Display a prompt window for the user to
+        input the number of the selected option. The prompt should look like
+        this :
+        <pre>
+          What is your favourite programming language ?
+          0: javaScript
+          1: Python
+          2: Rust
+          3: C++
+          (Write option number)
+        </pre>
+
+        1.2. Based on the input number, update the answers array. For example,
+        if the option is 3, increase the vlue AT POSITION 3 of the array by 1.
+        Make sure to check if the input is a number and if the number makes
+        sense (e.g answer 52 wouldn't make sensem right?) 2. Call this method
+        whenever the user clicks the "Answer poll" button. 3.Create a method
+        'displayResults' which displayes the poll results. The method takes a
+        string as an input (called 'type'), which can be either 'string' or
+        'array'. If type is 'array', simply display the results be the default
+        option. If type is 'string', display a string like "Poll results are 13,
+        2, 4, 1". 4. Run the 'displayResults' method at the end of each
+        'registerNewAnswer' method call.
+        <br />
+        <br />
+        Hint : Use many of the tools you learned about in this and the last
+        section.
+        <br />
+        <br />
+        <br />
+        <br />
+        BOUNS: Use the 'displayResults' method to display the 2 arrays in the
+        test data. Use both the 'array' and 'string' option. Do NOT put the
+        arrays in the poll object! So what should the this keyword look like in
+        the situations?
+        <br />
+        <br />
+        BOUNS TEST DATA 1: [5, 2, 3] BOUNS TEST DATA 2: [1, 5, 3, 9, 6, 1]
+        <br />
+        <br />
+      </div>
+      <button
+        class="btn btn-primary mb-5 pollAnswer"
+        style="margin-left: 50%; transform: translateX(-50%)"
+      >
+        Poll Answer
+      </button>
+    </div>
+    <script type="text/javascript" src="./Fifteenth.js"></script>
+  </body>
+</html>
