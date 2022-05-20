@@ -1,0 +1,8 @@
+In this challenge :
+
+A poll has a question, an array of options from which people can choose,
+and an array with the number of replies for each option. This data is stored in the starter object below.
+
+The idea of this challenge come from Jonas Schmedtmann in Udemy Js courses .
+
+But I did it with getting some help ;)
