@@ -11,3 +11,11 @@ const dogs = [
 dogs.forEach((e) => {
   e.recommended = Math.abs(Object.values(e)[1] ** 0.78 * 28);
 });
+
+//task2
+dogs.find((cur) => {
+  if (cur.owners.flat().includes("Sarah") === true) {
+    const sarah = cur.owners.flat()[0];
+    console.log(`${sarah}'s dog eats too much`);
+  }
+});
