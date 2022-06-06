@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twentieth challenge</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div
+      class="container my-5 mx-auto"
+      style="background-color: rgba(137, 43, 226, 0.52); border-radius: 30px"
+    >
+      <div class="p-3">
+        Julia and Kate are still studying dogs, and this time they are studying
+        if dogs are eating too much or too little. Eating too much means the
+        dog's current food portion is within a range 10% above and 10% below the
+        recommended portion (see hint).
+        <br />
+        <br />
+        1.Loop over the array containing dog objects, and for each dog,
+        calculate the recommended food portion and add it to the object as a new
+        property. Do NOT create a new array, simply loop over the array.
+        Formula: recommended = weight ** 0.75 * 28. (The result is in grams of
+        food, and the weight needs to be in kg)
+        <br />
+        <br />
+        2.Find Sarah's dog and log to the console whether it's eating too much
+        or too little. HINT: Some dogs have multiple owners, so you first need
+        to find Sarah in the owners array, and so this one is a bit tricky (on
+        purpose)
+        <br />
+        <br />
+        3.Create an array containing all owners of dogs who eat too much
+        ('ownersEatTooMuch') and an array with all owners of dogs who eat too
+        little
+        <br />
+        <br />
+        4.Log a string to the console for each array created in 3., like this:
+        "Matilda and Alice and Bob's dogs eat too much!" and "Sarah and John and
+        Micheal's dogs eat too little!"
+        <br />
+        <br />
+        5.Log to the console whether there is any dog eating EXACTLY the amount
+        of food that is recommended (just true or false)
+        <br />
+        <br />
+        6.Log to the console whether there is any dog eating an OKAY amount of
+        food (just true or false)
+        <br />
+        <br />
+        7.Create an array containing the dogs that are eating an OKAY amount of
+        food (try to reuse the condition used in 6.)
+        <br />
+        <br />
+        8.Create a shallow copy of the dogs array and sort it by recommended
+        food portion in an ascending order (keep in mind that the partions
+        inside the array's object)
+        <br />
+        <br />
+        <br />
+        <br />
+        Hint 1: Use many different tools to solve these challenges, you can use
+        the summary lecture to choose between them.
+        <br />
+        <br />
+        Hint 2: Being within a range 10% above and below the recommended portion
+        means: current > (recommended * 0.9) && current < (recommended * 1.1).
+        Basically, the current portion should be between 90% and 110% of the
+        recommended portion.
+        <br />
+        <br />
+        <br />
+        <br />
+        TEST DATA:
+        <br />
+        const dogs = [ { weight: 22, curFood: 250, owners: ['Alice','Bob']}, {
+        weight: 8, curFood: 200, owners: ['Matilda'] }, { weight: 13, curFood:
+        275, owners: ['Sarah','John'] }, { weight: 32, curFood: 340, owners:
+        ['Micheal'] } ]
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+    </div>
+    <script type="text/javascript" src="./Nineteenth.js"></script>
+  </body>
+</html>
