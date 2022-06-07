@@ -43,4 +43,14 @@ console.log(`${alice} and ${bob} and ${matilda}'s dog eats too little`);
 // console.log(dogs.some((e) => console.log(e.curFood === 200)));
 
 //task6
-console.log(dogs.some((e) => console.log(e.curFood <= 250)));
+// console.log(dogs.some((e) => console.log(e.curFood <= 250)));
+
+//task7
+const okayDogsEat = [];
+dogs.forEach((e) => {
+  if (e.curFood <= 250) {
+    okayDogsEat.push(e.dog);
+  }
+});
+
+console.log(okayDogsEat);
