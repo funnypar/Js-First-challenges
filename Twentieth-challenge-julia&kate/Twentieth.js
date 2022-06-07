@@ -54,3 +54,8 @@ dogs.forEach((e) => {
 });
 
 console.log(okayDogsEat);
+
+//task8
+const copyDogs = dogs.slice();
+copyDogs.sort((a, b) => a.recommended - b.recommended);
+console.log(copyDogs);
