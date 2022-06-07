@@ -31,3 +31,10 @@ dogs.forEach((e) => {
 });
 console.log(ownersEatTooMuch.flat());
 console.log(ownersEatTooLittle.flat());
+
+//task4
+const [sarah, John, micheal] = [...ownersEatTooMuch.flat()];
+console.log(`${sarah} and ${John} and ${micheal}'s dog eats too much`);
+
+const [alice, bob, matilda] = [...ownersEatTooLittle.flat()];
+console.log(`${alice} and ${bob} and ${matilda}'s dog eats too little`);
