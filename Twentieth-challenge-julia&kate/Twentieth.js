@@ -38,3 +38,6 @@ console.log(`${sarah} and ${John} and ${micheal}'s dog eats too much`);
 
 const [alice, bob, matilda] = [...ownersEatTooLittle.flat()];
 console.log(`${alice} and ${bob} and ${matilda}'s dog eats too little`);
+
+//task5
+console.log(dogs.some((e) => console.log(e.curFood === 200)));
