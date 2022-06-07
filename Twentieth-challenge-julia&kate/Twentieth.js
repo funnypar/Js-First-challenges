@@ -40,4 +40,7 @@ const [alice, bob, matilda] = [...ownersEatTooLittle.flat()];
 console.log(`${alice} and ${bob} and ${matilda}'s dog eats too little`);
 
 //task5
-console.log(dogs.some((e) => console.log(e.curFood === 200)));
+// console.log(dogs.some((e) => console.log(e.curFood === 200)));
+
+//task6
+console.log(dogs.some((e) => console.log(e.curFood <= 250)));
