@@ -10,6 +10,13 @@ const bmw = new Car(120);
 
 //Task 2
 Car.prototype.accelerate = function () {
-  console.log(`New speed : ${this.speed + 10}km/h`);
+  console.log(`New speed after accelerate : ${this.speed + 10} km/h`);
 };
 bmw.accelerate();
+
+//Task 3
+Car.prototype.brake = function () {
+  console.log(`New speed after brake : ${this.speed - 5} km/h
+  `);
+};
+bmw.brake();
