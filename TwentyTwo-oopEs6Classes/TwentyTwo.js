@@ -26,7 +26,7 @@ class Car {
 
 const bmw = new Car(120);
 const mercedes = new Car(100);
-
+const ford = new Car(120);
 //BMW
 bmw.accelerate();
 bmw.brake();
@@ -38,4 +38,10 @@ mercedes.accelerate();
 mercedes.brake();
 console.log(mercedes.speedUS);
 mercedes.speedUs = 90;
+console.log(`Now the current speed is :${mercedes.speed}`);
+//Ford
+ford.accelerate();
+ford.brake();
+console.log(ford.speedUS);
+ford.speedUs = 100;
 console.log(`Now the current speed is :${mercedes.speed}`);
