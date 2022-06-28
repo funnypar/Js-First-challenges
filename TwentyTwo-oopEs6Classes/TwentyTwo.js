@@ -15,19 +15,27 @@ class Car {
     `);
   }
   //Added task 2
-  get speedUs() {
+  get speedUS() {
     return `speed is ${this.speed / 1.6} mi/h`;
+  }
+  //Added task 3
+  set speedUs(speed) {
+    this.speed = speed / 1.6;
   }
 }
 
 const bmw = new Car(120);
-const mercedes = new Car(120);
+const mercedes = new Car(100);
 
 //BMW
 bmw.accelerate();
 bmw.brake();
-console.log(bmw.speedUs);
+console.log(bmw.speedUS);
+bmw.speedUs = 120;
+console.log(`Now the current speed is :${bmw.speed}`);
 //Mercedes
 mercedes.accelerate();
 mercedes.brake();
-console.log(mercedes.speedUs);
+console.log(mercedes.speedUS);
+mercedes.speedUs = 90;
+console.log(`Now the current speed is :${mercedes.speed}`);
