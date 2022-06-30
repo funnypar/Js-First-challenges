@@ -35,8 +35,9 @@ class EVCl extends CarCl {
     this.#charge = charge;
   }
 
-  set chargeBattery(chargeTo) {
+  chargeBattery(chargeTo) {
     this.#charge = chargeTo;
+    return this;
   }
 
   accelarate() {
@@ -47,5 +48,16 @@ class EVCl extends CarCl {
         this.#charge
       }`
     );
+    return this;
   }
 }
+
+// Rivian
+
+const rivian = new EVCl("Rivian", 120, 23);
+console.log(rivian);
+rivian.chargeBattery(40);
+console.log(rivian);
+
+//Added Task 3
+rivian.chargeBattery(60).accelarate().brake();
