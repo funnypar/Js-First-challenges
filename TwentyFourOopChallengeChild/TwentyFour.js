@@ -28,20 +28,24 @@ class CarCl {
 
 //Added Task 1
 class EVCl extends CarCl {
+  //Added Task 2
+  #charge;
   constructor(make, speed, charge) {
     super(make, speed);
-    this.charge = charge;
+    this.#charge = charge;
   }
 
   set chargeBattery(chargeTo) {
-    this.charge = chargeTo;
+    this.#charge = chargeTo;
   }
 
   accelarate() {
     this.speed += 20;
-    this.charge--;
+    this.#charge--;
     console.log(
-      `${this.make} is going at ${this.speed} km/h, with a charge of ${this.charge}`
+      `${this.make} is going at ${this.speed} km/h, with a charge of ${
+        this.#charge
+      }`
     );
   }
 }
