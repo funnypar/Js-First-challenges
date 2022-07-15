@@ -1,8 +1,8 @@
 "use strict";
+const image = document.createElement("img");
 
 const createImg = function (path) {
   return new Promise(function (resolve, reject) {
-    const image = document.createElement("img");
     image.src = path;
     image.addEventListener("load", function () {
       setTimeout(() => {
@@ -17,6 +17,11 @@ const createImg = function (path) {
   });
 };
 
-createImg("./46497ss.png")
+createImg("./46497.png")
   .then((image) => console.log(`I have one image`))
+  .then(() => {
+    setTimeout(() => {
+      image.style.display = "none";
+    }, 2000);
+  })
   .catch((err) => console.error(err));
