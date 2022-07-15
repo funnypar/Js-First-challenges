@@ -5,8 +5,10 @@ const createImg = function (path) {
     const image = document.createElement("img");
     image.src = path;
     image.addEventListener("load", function () {
-      document.body.append(image);
-      resolve(image);
+      setTimeout(() => {
+        document.body.append(image);
+        resolve(image);
+      }, 2000);
     });
 
     image.addEventListener("error", function () {
