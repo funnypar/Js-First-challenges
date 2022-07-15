@@ -15,4 +15,6 @@ const createImg = function (path) {
   });
 };
 
-createImg("./46497ss.png");
+createImg("./46497ss.png")
+  .then((image) => console.log(`I have one image`))
+  .catch((err) => console.error(err));
